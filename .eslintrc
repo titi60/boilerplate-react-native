@@ -1,0 +1,30 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js"]
+      }
+    ],
+    "import/no-unresolved": 1,
+    "react/prop-types": 2,
+    "react/sort-comp": [0],
+    "no-underscore-dangle": 0,
+    "global-require": 0
+  },
+  "globals": {
+    "fetch": true,
+    "__DEV__": true
+  },
+  "env": {
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "babel-module": {},
+      "react-native": {}
+    }
+  }
+}

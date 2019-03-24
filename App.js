@@ -3,6 +3,9 @@ import Proptypes from 'prop-types';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
+import StoryBookUI from './storybook';
+
+const STORY_BOOK_ENABLED = true;
 
 const styles = StyleSheet.create({
   container: {
@@ -10,8 +13,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 });
-
-export default class App extends React.Component {
+class App extends React.Component {
   state = {
     isLoadingComplete: false,
   };
@@ -64,6 +66,15 @@ export default class App extends React.Component {
   };
 }
 
-App.propTypes = {
-  skipLoadingScreen: Proptypes.bool.isRequired,
+App.defaultProps = {
+  skipLoadingScreen: false,
 };
+
+App.propTypes = {
+  skipLoadingScreen: Proptypes.bool,
+};
+
+const AppContainer = () =>
+  __DEV__ && STORY_BOOK_ENABLED ? <StoryBookUI /> : <App />;
+
+export default AppContainer;

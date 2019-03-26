@@ -13,6 +13,7 @@ const HomeStack = createStackNavigator({
 
 HomeStack.navigationOptions = {
   tabBarLabel: 'Home',
+  // eslint-disable-next-line
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -31,6 +32,7 @@ const LinksStack = createStackNavigator({
 
 LinksStack.navigationOptions = {
   tabBarLabel: 'Links',
+  // eslint-disable-next-line
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -45,6 +47,7 @@ const SettingsStack = createStackNavigator({
 
 SettingsStack.navigationOptions = {
   tabBarLabel: 'Settings',
+  // eslint-disable-next-line
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}

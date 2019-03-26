@@ -7,7 +7,6 @@
         "extensions": [".js"]
       }
     ],
-    "import/no-unresolved": 1,
     "react/prop-types": 2,
     "react/sort-comp": [0],
     "no-underscore-dangle": 0,

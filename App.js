@@ -1,22 +1,23 @@
 import React from 'react';
 import Proptypes from 'prop-types';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
+import { StatusBar } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
-import AppNavigator from './navigation/AppNavigator';
+import { ThemeProvider } from 'styled-components';
+import theme from 'styles/theme';
+
+import AppNavigator from './src/navigation/AppNavigator';
 import StoryBookUI from './storybook';
 
 const STORY_BOOK_ENABLED = true;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-});
 class App extends React.Component {
   state = {
     isLoadingComplete: false,
   };
+
+  componentDidMount() {
+    StatusBar.setHidden(true);
+  }
 
   render() {
     const { isLoadingComplete } = this.state;
@@ -32,10 +33,9 @@ class App extends React.Component {
       );
     }
     return (
-      <View style={styles.container}>
-        {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-        <AppNavigator />
-      </View>
+      <ThemeProvider theme={theme}>
+        {__DEV__ && STORY_BOOK_ENABLED ? <StoryBookUI /> : <AppNavigator />}
+      </ThemeProvider>
     );
   }
 
@@ -74,7 +74,4 @@ App.propTypes = {
   skipLoadingScreen: Proptypes.bool,
 };
 
-const AppContainer = () =>
-  __DEV__ && STORY_BOOK_ENABLED ? <StoryBookUI /> : <App />;
-
-export default AppContainer;
+export default App;

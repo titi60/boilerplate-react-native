@@ -12,17 +12,19 @@ const CenteredView = ({ children }) => (
   </Box>
 );
 
-storiesOf('CenteredView', module).add('default view', () => (
+storiesOf('CenteredView', module).add('Product', () => (
   <CenteredView>
-    <View style={{ width: 200, height: 100, backgroundColor: 'red' }}>
-      <Text>Hello Storybook</Text>
+    <View style={{ width: 200, height: 300, backgroundColor: 'grey' }}>
+      <Text>PRODUCTS_LIST_ITEM</Text>
     </View>
   </CenteredView>
 ));
 
-storiesOf('CenteredView', module).add('Yes', () => (
+storiesOf('CenteredView', module).add('Blue Button', () => (
   <CenteredView>
-    <Text>Yes</Text>
+    <Box width={1} height={50} bg="blue" justifyContent="center" alignItems="center">
+      <Text>Yes</Text>
+    </Box>
   </CenteredView>
 ));
 
@@ -32,7 +34,7 @@ storiesOf('Button', module).add('Button', () => (
   </CenteredView>
 ));
 
-storiesOf('Box', module).add('Button', () => (
+storiesOf('Box', module).add('Pink Button', () => (
   <CenteredView>
     <Button
       onPress={() => {
@@ -40,7 +42,7 @@ storiesOf('Box', module).add('Button', () => (
       }}
     >
       <Box width={1} height={50} bg="pink.1" justifyContent="center" alignItems="center">
-        <Text color="white">wqdqwdqwdqwd</Text>
+        <Text color="white">Connexion</Text>
       </Box>
     </Button>
   </CenteredView>

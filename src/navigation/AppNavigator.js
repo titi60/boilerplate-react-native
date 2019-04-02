@@ -16,19 +16,17 @@ const AuthenticationNavigator = createStackNavigator({
   Login,
 }, {
   ...navigationOptions,
-    initialRouteName: 'Login',
+  initialRouteName: 'Login',
 })
 
 const ShopNavigator = createStackNavigator({
   Home,
   Basket,
   Products,
-},
-  {
-    ...navigationOptions,
-    initialRouteName: 'Home',
-  }
-);
+}, {
+  ...navigationOptions,
+  initialRouteName: 'Home',
+});
 
 
 export default createAppContainer(

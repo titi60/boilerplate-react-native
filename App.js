@@ -10,7 +10,7 @@ const STORY_BOOK_ENABLED = false;
 
 class App extends React.Component {
   componentDidMount() {
-    StatusBar.setHidden(true);
+    StatusBar.setHidden(false);
   }
 
   render() {

@@ -22,9 +22,10 @@ class Splashscreen extends React.Component {
           flex: 1,
           justifyContent: 'center',
           alignItems: 'center',
+          backgroundColor: '#362E3A'
         }}
       >
-        <Text>Efashion Splashscreen</Text>
+        <Text style={{ color: 'white' }}>Efashion Splashscreen</Text>
       </View>
     );
   }

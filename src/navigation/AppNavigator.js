@@ -2,19 +2,19 @@ import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator, createAppContainer } from 'react-navigation';
 
-import TabBarIcon from '../components/Sample_TabBarIcon';
+import TabBarIcon from './Example_TabBarIcon';
 
-import Splashscreen from './Splashscreen';
+import Splashscreen from '../pages/Splashscreen';
 
-import Login from './authentication/Login';
+import Login from '../pages/authentication/Login';
 
-import Home from './shop/Home';
-import Basket from './shop/Basket';
-import Products from './shop/Products';
+import Home from '../pages/shop/Home';
+import Basket from '../pages/shop/Basket';
+import Products from '../pages/shop/Products';
 
-import HomeScreen from './admin/HomeScreen';
-import LinksScreen from './admin/LinksScreen';
-import SettingsScreen from './admin/SettingsScreen';
+import HomeScreen from '../pages/admin/HomeScreen';
+import LinksScreen from '../pages/admin/LinksScreen';
+import SettingsScreen from '../pages/admin/SettingsScreen';
 
 /**
  * [ADMIN] FIRST TAB

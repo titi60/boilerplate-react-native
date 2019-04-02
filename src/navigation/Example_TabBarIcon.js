@@ -1,7 +1,7 @@
 import React from 'react';
 import { Icon } from 'expo';
 
-import Colors from '../constants/Sample_Colors';
+import Colors from './Example_TabColors';
 
 // eslint-disable-next-line
 class TabBarIcon extends React.Component {

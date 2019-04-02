@@ -9,7 +9,7 @@ module.exports = api => {
           root: ['./src'],
           extensions: ['.ios.js', '.android.js', '.js', '.json'],
           alias: {
-            styles: './src/styles',
+            appStyles: './src/styles',
           },
         },
       ],

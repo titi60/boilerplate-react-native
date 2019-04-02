@@ -1,10 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
+import { Box, Text, Button } from 'appStyles';
 import { storiesOf } from '@storybook/react-native';
 import Proptypes from 'prop-types';
-import Box from 'styles/Box';
-import Text from 'styles/Text';
-import Button from 'styles/Button';
 
 const CenteredView = ({ children }) => (
   <Box flex="1" justifyContent="center" alignItems="center" px={20}>

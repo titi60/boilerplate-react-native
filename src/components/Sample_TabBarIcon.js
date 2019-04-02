@@ -1,10 +1,10 @@
 import React from 'react';
 import { Icon } from 'expo';
 
-import Colors from '../constants/Colors';
+import Colors from '../constants/Sample_Colors';
 
 // eslint-disable-next-line
-export default class TabBarIcon extends React.Component {
+class TabBarIcon extends React.Component {
   render() {
     return (
       <Icon.Ionicons
@@ -18,3 +18,5 @@ export default class TabBarIcon extends React.Component {
     );
   }
 }
+
+export default TabBarIcon;

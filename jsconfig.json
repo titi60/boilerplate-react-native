@@ -3,7 +3,12 @@
     "baseUrl": ".",
     "paths": {
       "*": ["src/*"],
-      "appStyles/*": ["styles/*"]
+      "appStyles/*": ["styles/*"],
+      "actions/*": ["redux/actions/*"],
+      "reducers": ["redux/reducers/*"],
+      "selectors": ["redux/selectors/*"],
+      "shared": ["components/shared/*"],
+      "utils": ["utils/*"]
     }
   },
   "exclude": ["node_modules"]

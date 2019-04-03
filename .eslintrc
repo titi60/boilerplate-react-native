@@ -12,11 +12,13 @@
     "no-underscore-dangle": 0,
     "global-require": 0,
     "no-console": 0,
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
+    "no-shadow": 0
   },
   "globals": {
     "fetch": true,
-    "__DEV__": true
+    "__DEV__": true,
+    "window": true
   },
   "env": {
     "jest": true

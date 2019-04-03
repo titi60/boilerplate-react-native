@@ -8,10 +8,10 @@ import combinedReducers from 'reducers';
 const middlewares = [thunk];
 
 /**
- * [REDUX_STORE_VIEWER] Only in debugger mode
+ * [REDUX_STORE_VIEWER_ON_DEBUGGER] Only in debugger mode
  */
 const composeEnhancers =
-  typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+  __DEV__ && typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
     : compose;
 
@@ -25,7 +25,9 @@ const logger = createLogger({
 });
 
 // Only in development
-middlewares.push(logger);
+if (__DEV__) {
+  middlewares.push(logger);
+}
 
 /**
  * [REDUX_PERSIST]

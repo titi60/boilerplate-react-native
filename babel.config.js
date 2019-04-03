@@ -6,7 +6,7 @@ module.exports = api => {
       [
         require.resolve('babel-plugin-module-resolver'),
         {
-          root: ['./src'],
+          root: ['.'],
           extensions: ['.ios.js', '.android.js', '.js', '.json'],
           alias: {
             appStyles: './src/styles',
@@ -15,6 +15,7 @@ module.exports = api => {
             selectors: './src/redux/selectors',
             shared: './src/components/shared',
             utils: './src/utils',
+            config: './config',
           },
         },
       ],

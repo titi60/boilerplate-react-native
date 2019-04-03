@@ -2,13 +2,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "*": ["src/*"],
-      "appStyles/*": ["styles/*"],
-      "actions/*": ["redux/actions/*"],
-      "reducers": ["redux/reducers/*"],
-      "selectors": ["redux/selectors/*"],
-      "shared": ["components/shared/*"],
-      "utils": ["utils/*"]
+      "*": ["*"],
+      "appStyles/*": ["src/styles/*"],
+      "actions/*": ["src/redux/actions/*"],
+      "reducers": ["src/redux/reducers/*"],
+      "selectors": ["src/redux/selectors/*"],
+      "shared": ["src/components/shared/*"],
+      "utils": ["src/utils/*"]
     }
   },
   "exclude": ["node_modules"]

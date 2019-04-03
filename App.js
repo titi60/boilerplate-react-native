@@ -6,7 +6,7 @@ import configureStore from './src/redux/store'; // eslint-disable-line
 import { PersistGate } from 'redux-persist/lib/integration/react';
 // STYLES
 import { ThemeProvider } from 'styled-components';
-import theme from 'styles/theme';
+import theme from 'appStyles/theme';
 // REACT NAVIGATION
 import AppNavigator from './src/navigation/AppNavigator';
 import StoryBookUI from './storybook';

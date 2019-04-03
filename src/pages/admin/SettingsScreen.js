@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Box, Text } from 'styles';
+import { Box, Text } from 'appStyles';
 
 export default class SettingsScreen extends React.Component {
   static navigationOptions = {

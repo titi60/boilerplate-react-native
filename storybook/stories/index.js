@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react-native';
 import Proptypes from 'prop-types';
 
 const CenteredView = ({ children }) => (
-  <Box flex="1" justifyContent="center" alignItems="center" px={20}>
+  <Box flex={1} justifyContent="center" alignItems="center" px={20}>
     {children}
   </Box>
 );

@@ -11,7 +11,7 @@ import theme from 'appStyles/theme';
 import AppNavigator from './src/navigation/AppNavigator';
 import StoryBookUI from './storybook';
 
-const STORY_BOOK_ENABLED = false;
+const STORY_BOOK_ENABLED = true;
 
 const { store, persistor } = configureStore();
 
